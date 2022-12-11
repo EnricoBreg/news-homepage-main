@@ -168,10 +168,14 @@ body {
   background-color: var(--clr-primary-600);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: var(--fw-800);
+  font-weight: var(--fw-700);
   color: var(--clr-neutral-100);
   letter-spacing: .3rem;
   padding: .85rem 1.8rem; 
+  transition: background-color 300ms;
+}
+.button:hover {
+  background-color: var(--clr-neutral-700);
 }
 
 /* Stile della navbar */
