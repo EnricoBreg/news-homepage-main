@@ -170,6 +170,7 @@ body {
 }
 
 .button {
+  font-size: .8em;
   background-color: var(--clr-primary-600);
   text-decoration: none;
   text-transform: uppercase;
