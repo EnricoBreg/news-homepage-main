@@ -176,7 +176,7 @@ body {
   font-weight: var(--fw-700);
   color: var(--clr-neutral-100);
   letter-spacing: .3rem;
-  padding: .85rem 1.8rem; 
+  padding: .85rem 1.3rem; 
   transition: background-color 300ms;
 }
 .button:hover {
@@ -231,7 +231,7 @@ body {
 .main {
   display: grid;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .main__title {
@@ -260,4 +260,43 @@ body {
   .main img[data-screensize="mobile"] {
     display: none;
   }
+}
+
+/* Stile della sezione notizie correlate */
+.news {
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+  background-color: var(--clr-neutral-700);
+}
+
+.news__card {
+  color: var(--clr-neutral-200);
+}
+.news__card:is(:not(:last-child)) {
+  border-bottom: 1px solid var(--clr-neutral-100);
+}
+
+.news__card-title {
+  margin-bottom: .5rem;
+}
+
+.news__card-title a {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+  transition: color 200ms;
+}
+.news__card-title a:hover {
+  color: var(--clr-primary-400);
+}
+
+.news__title {
+  font-size: 2em;
+  color: var(--clr-primary-400);
+}
+.news__card:is(:not(:last-child)) > .news__card-body {
+  margin-bottom: 1.5rem;
+}
+
+.news > *:is(:not(:last-child)) {
+  margin-bottom: 1.5rem;
 }
