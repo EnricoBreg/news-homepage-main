@@ -15,6 +15,13 @@
     <title>Frontend Mentor | News homepage</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -30,6 +37,7 @@
             </svg>
           </a>
         </div>
+        <!-- Pulsante per aprire il menu si mobile -->
         <div id="open-menu-btn" class="open-menu">
           <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
             <g fill="#00001A" fill-rule="evenodd">
@@ -47,9 +55,12 @@
         </ul>
       </nav>
 
+      <!-- Menu su mobile -->
+      <!-- Modale per oscurare la pagina dietro -->
       <div id="mobile-menu-modal" class="mobile-menu-modal display-none">
+        <!-- Menu con link -->
         <div id="mobile-menu" class="mobile-menu">
-          <!-- Close button -->
+          <!-- Pulsante per chiudere il menu -->
           <div id="close-menu-btn" class="close-menu">
             <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
               <g fill="#00001A" fill-rule="evenodd">
@@ -69,91 +80,103 @@
         </div>
       </div>
       <!-- Main content della pagina -->
-      <main class="main">
-        <div class="main__image">
-          <img
-            src="./assets/images/image-web-3-desktop.jpg"
-            alt="The Bright Future of Web 3.0?"
-          />
-        </div>
-        <h1 class="main__title">The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <a href="#" class="button">Read more</a>
-      </main>
-
-      <!-- Sidebar news -->
-      <sidebar class="news">
-        <!-- Prima news -->
-        <div class="news__card">
-          <h3 class="news__card-title">New Hydrogen VS Electric Cars</h3>
-          <div class="news__card-body">
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </div>
-        </div>
-        <!-- Seconda news -->
-        <div class="news__card">
-          <h3 class="news__card-title">The Downsides of AI Artistry</h3>
-          <div class="news__card-body">
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </div>
-        </div>
-        <!-- Terza news -->
-        <div class="news__card">
-          <h3 class="news__card-title">Is VC Funding Drying Up?</h3>
-          <div class="news__card-body">
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </div>
-        </div>
-      </sidebar>
-      <!-- Articoli correlati -->
-      <div class="related-articles">
-        <!-- Primo articolo correlato -->
-        <div class="related-article__card">
-          <div class="related-article-card__image">
-            <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
-          </div>
-          <h3 class="related-article-card__title">
-            <span>01</span> Reviving Retro PCs
-          </h3>
-          <div class="related-article-card__body">
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-        <!-- Secondo articolo correlato -->
-        <div class="related-article__card">
-          <div class="related-article-card__image">
-            <img src="./assets/images/image-top-laptops.jpg" alt="Retro PCs" />
-          </div>
-          <h3 class="related-article-card__title">
-            <span>02</span> Top 10 Laptops of 2022
-          </h3>
-          <div class="related-article-card__body">
-            <p>Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-        <!-- Terzo articolo correlato -->
-        <div class="related-article__card">
-          <div class="related-article-card__image">
+      <div class="grid-container">
+        <main class="main">
+          <div class="main__image">
+            <!-- Immagine da mostrare su desktop -->
             <img
-              src="./assets/images/image-gaming-growth.jpg"
-              alt="Retro PCs"
+              data-screensize="desktop"
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt="The Bright Future of Web 3.0"
+            />
+            <!-- Immagine da mostrare su mobile -->
+            <img
+              data-screensize="mobile"
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt="The Bright Future of Web 3.0"
             />
           </div>
-          <h3 class="related-article-card__title">
-            <span>03</span>The Growth of Gaming
-          </h3>
-          <div class="related-article-card__body">
-            <p>How the pandemic has sparked fresh opportunities.</p>
+          <h1 class="main__title">The Bright Future of Web 3.0?</h1>
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="#" class="button">Read more</a>
+        </main>
+        <!-- Sidebar news -->
+        <sidebar class="news">
+          <!-- Prima news -->
+          <div class="news__card">
+            <h3 class="news__card-title">New Hydrogen VS Electric Cars</h3>
+            <div class="news__card-body">
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+          </div>
+          <!-- Seconda news -->
+          <div class="news__card">
+            <h3 class="news__card-title">The Downsides of AI Artistry</h3>
+            <div class="news__card-body">
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+          </div>
+          <!-- Terza news -->
+          <div class="news__card">
+            <h3 class="news__card-title">Is VC Funding Drying Up?</h3>
+            <div class="news__card-body">
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </sidebar>
+        <!-- Articoli correlati -->
+        <div class="related-articles">
+          <!-- Primo articolo correlato -->
+          <div class="related-article__card">
+            <div class="related-article-card__image">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+            </div>
+            <h3 class="related-article-card__title">
+              <span>01</span> Reviving Retro PCs
+            </h3>
+            <div class="related-article-card__body">
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <!-- Secondo articolo correlato -->
+          <div class="related-article__card">
+            <div class="related-article-card__image">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="Retro PCs"
+              />
+            </div>
+            <h3 class="related-article-card__title">
+              <span>02</span> Top 10 Laptops of 2022
+            </h3>
+            <div class="related-article-card__body">
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <!-- Terzo articolo correlato -->
+          <div class="related-article__card">
+            <div class="related-article-card__image">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="Retro PCs"
+              />
+            </div>
+            <h3 class="related-article-card__title">
+              <span>03</span>The Growth of Gaming
+            </h3>
+            <div class="related-article-card__body">
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
           </div>
         </div>
       </div>

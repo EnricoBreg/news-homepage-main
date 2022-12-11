@@ -7,7 +7,6 @@ const closeMenuBtn = document.querySelector("#close-menu-btn");
 const mobileMenuModal = document.querySelector("#mobile-menu-modal");
 const mobileMenu = document.querySelector("#mobile-menu");
 
-console.log(closeMenuBtn);
 /* ------------------------
  FUNZIONI
 ------------------------ */
