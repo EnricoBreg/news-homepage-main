@@ -291,7 +291,7 @@ body {
 }
 
 .news__title {
-  font-size: 2em;
+  font-size: 2.5rem;
   color: var(--clr-primary-400);
 }
 .news__card:is(:not(:last-child)) > .news__card-body {
@@ -312,6 +312,7 @@ body {
 .related-article__card {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 1rem;
 }
 .related-article__card:last-child {
   margin-bottom: 2rem;
@@ -320,6 +321,7 @@ body {
 .related-article-card__image {
   width: 100px;
   grid-row: 1 / span 2;
+  justify-self: end;
 }
 
 .related-article-card__title {
